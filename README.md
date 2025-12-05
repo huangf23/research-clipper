@@ -1,4 +1,4 @@
-# research-clipper
+# research-clipper（单一文献内请勿只摘录图片）
 
 一个轻量、面向科研摘录的 Chrome 扩展，用于从网页快速摘录文字或图片、自动尝试从页面提取文献元信息（DOI、标题、作者等）、使用 CrossRef 补全元数据、按关键词管理笔记、导入/导出 JSON 以便跨机器共享。
 
