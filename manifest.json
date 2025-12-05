@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "学术文献剪藏 (Research Clipper)",
+  "version": "1.1.0",
+  "description": "在学术网页中选中文字，通过 DOI 智能补全元数据并保存到侧边栏",
+  "permissions": [
+    "sidePanel",
+    "storage",
+    "contextMenus",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://api.crossref.org/*",
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "all_frames": false
+    }
+  ],
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "action": {
+    "default_title": "打开学术文献库"
+  }
+}
